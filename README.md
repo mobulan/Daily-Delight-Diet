@@ -18,3 +18,11 @@
 2. 编辑每天菜舍入的三大营养素目标，选菜时会尽可能满足（目前看下来鸡肋，可能实现有问题）
 3. 如果有一餐只有素菜，自己可以考虑开个罐头或者来两块鸡胸肉饼保证吃饱
 4. 选过的菜在接下来若干次不会出现
+
+## 编译指南
+之前也不会封装，全靠Deepseek！
+1. 新建python虚拟环境，conda或者自带都行。
+2. 移动到对应目录 `cd deit`
+3. 安装所需要的包，应该是`pip install pandas pyinstaller tkinter tkcalendar openpyxl pyinstaller`
+4. 封装 `pyinstaller --onefile --windowed --name=MenuApp deit.py`
+5. 打开dist文件夹中的可执行文件
